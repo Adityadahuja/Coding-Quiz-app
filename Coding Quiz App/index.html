@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Coding Quiz App</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="app-header">
+        <h1 class="app-title">Coding Quiz App</h1>
+        <div class="settings-container">
+          <button id="settingsBtn" class="settings-btn">
+            <span class="settings-icon">⚙️</span>
+          </button>
+          <div id="settingsMenu" class="settings-menu">
+            <div class="settings-header">
+              <h3>Settings</h3>
+              <button class="close-btn">×</button>
+            </div>
+            <div class="settings-content">
+              <div class="settings-group">
+                <h4>Theme</h4>
+                <div class="theme-buttons">
+                  <button class="theme-btn" data-theme="light">Light</button>
+                  <button class="theme-btn" data-theme="dark">Dark</button>
+                </div>
+              </div>
+              <div class="settings-group">
+                <h4>Animation Speed</h4>
+                <div class="speed-buttons">
+                  <button class="speed-btn" data-speed="slow">Slow</button>
+                  <button class="speed-btn" data-speed="normal">Normal</button>
+                  <button class="speed-btn" data-speed="fast">Fast</button>
+                </div>
+              </div>
+              <div class="settings-group">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="soundToggle">
+                  <span class="toggle-slider"></span>
+                  Sound Effects
+                </label>
+              </div>
+              <div class="settings-group">
+                <label class="toggle-switch">
+                  <input type="checkbox" id="timerToggle">
+                  <span class="toggle-slider"></span>
+                  Question Timer
+                </label>
+              </div>
+              <div class="settings-group">
+                <button id="resetBtn" class="reset-btn">Reset Progress</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-container">
+        <div id="quiz">
+          <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+              <li class="option" data-option="a">
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Answer A</label>
+              </li>
+              <li class="option" data-option="b">
+                <input type="radio" name="answer" id="b" class="answer">
+                <label for="b" id="b_text">Answer B</label>
+              </li>
+              <li class="option" data-option="c">
+                <input type="radio" name="answer" id="c" class="answer">
+                <label for="c" id="c_text">Answer C</label>
+              </li>
+              <li class="option" data-option="d">
+                <input type="radio" name="answer" id="d" class="answer">
+                <label for="d" id="d_text">Answer D</label>
+              </li>
+            </ul>
+          </div>
+          <div id="feedback" class="feedback-container"></div>
+          <button id="submit" class="submit-btn">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="app-footer">
+      <div class="footer-content">
+        <p>Created by <strong>Aditya Dahuja</strong></p>
+        <div class="social-links">
+          <a href="https://github.com/Adityadahuja" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" width="24" height="24">
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-dahuja" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" width="24" height="24">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
